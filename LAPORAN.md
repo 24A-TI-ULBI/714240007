@@ -94,9 +94,9 @@ Format standard response error dari server:
   }
   ```
 
-#### **B. Ambil Semua Pengumuman (Standar Sistem Kampus)**
+#### **B. Ambil Semua Pengumuman (REST API)**
 * **Endpoint**: `GET /pengumuman`
-* **Kegunaan**: Pintu akses resmi untuk mendapatkan seluruh data pengumuman.
+* **Kegunaan**: Digunakan sebagai alamat resmi untuk mengambil seluruh daftar pengumuman terbaru.
 * **Response Sukses (200 OK)**: Sama persis dengan data pada `GET /pengumuman-data`.
 
 #### **C. Ambil Detail Pengumuman Spesifik**
@@ -180,7 +180,7 @@ Format standard response error dari server:
       },
       {
         "id": "664c8d50fcf86cd79943900b",
-        "nama": "Penting"
+        "nama": "Keuangan"
       }
     ]
   }
@@ -191,7 +191,7 @@ Format standard response error dari server:
 * **Request Body**:
   ```json
   {
-    "nama": "Kemahasiswaan"
+    "nama": "Ormawa"
   }
   ```
 * **Response Sukses (200 OK)**: Mengembalikan objek kategori baru yang berhasil dibuat.
